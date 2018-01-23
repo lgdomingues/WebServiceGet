@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		34D7FBED2016B344001277B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7FBEC2016B344001277B4 /* AppDelegate.swift */; };
-		34D7FBEF2016B344001277B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7FBEE2016B344001277B4 /* ViewController.swift */; };
 		34D7FBF22016B344001277B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D7FBF02016B344001277B4 /* Main.storyboard */; };
 		34D7FBF42016B344001277B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D7FBF32016B344001277B4 /* Assets.xcassets */; };
 		34D7FBF72016B344001277B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D7FBF52016B344001277B4 /* LaunchScreen.storyboard */; };
+		34D7FBFF2016B3BF001277B4 /* CEPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D7FBFE2016B3BF001277B4 /* CEPTableViewController.swift */; };
+		4380FBDA2017F257008714FD /* CEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4380FBD92017F257008714FD /* CEP.swift */; };
+		7996E8CE46FD18972218ADDD /* Pods_WebServiceGet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E99B6A07D93A75BB3A469D /* Pods_WebServiceGet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34D7FBE92016B344001277B4 /* WebServiceGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebServiceGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D7FBEC2016B344001277B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34D7FBEE2016B344001277B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34D7FBF12016B344001277B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34D7FBF32016B344001277B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34D7FBF62016B344001277B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34D7FBF82016B344001277B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D7FBFE2016B3BF001277B4 /* CEPTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEPTableViewController.swift; sourceTree = "<group>"; };
+		4380FBD92017F257008714FD /* CEP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CEP.swift; sourceTree = "<group>"; };
+		AC82A53F823146D80248D6EF /* Pods-WebServiceGet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebServiceGet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebServiceGet/Pods-WebServiceGet.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1EB2BDBF947FD1995817E8 /* Pods-WebServiceGet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebServiceGet.release.xcconfig"; path = "Pods/Target Support Files/Pods-WebServiceGet/Pods-WebServiceGet.release.xcconfig"; sourceTree = "<group>"; };
+		E4E99B6A07D93A75BB3A469D /* Pods_WebServiceGet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebServiceGet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7996E8CE46FD18972218ADDD /* Pods_WebServiceGet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289D828D1B5330C98BFB4DC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC82A53F823146D80248D6EF /* Pods-WebServiceGet.debug.xcconfig */,
+				CB1EB2BDBF947FD1995817E8 /* Pods-WebServiceGet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		34D7FBE02016B344001277B4 = {
 			isa = PBXGroup;
 			children = (
 				34D7FBEB2016B344001277B4 /* WebServiceGet */,
 				34D7FBEA2016B344001277B4 /* Products */,
+				289D828D1B5330C98BFB4DC5 /* Pods */,
+				990A3F6B3BDB469EBD99EC09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +73,22 @@
 			isa = PBXGroup;
 			children = (
 				34D7FBEC2016B344001277B4 /* AppDelegate.swift */,
-				34D7FBEE2016B344001277B4 /* ViewController.swift */,
+				4380FBD92017F257008714FD /* CEP.swift */,
+				34D7FBFE2016B3BF001277B4 /* CEPTableViewController.swift */,
 				34D7FBF02016B344001277B4 /* Main.storyboard */,
 				34D7FBF32016B344001277B4 /* Assets.xcassets */,
 				34D7FBF52016B344001277B4 /* LaunchScreen.storyboard */,
 				34D7FBF82016B344001277B4 /* Info.plist */,
 			);
 			path = WebServiceGet;
+			sourceTree = "<group>";
+		};
+		990A3F6B3BDB469EBD99EC09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4E99B6A07D93A75BB3A469D /* Pods_WebServiceGet.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34D7FBFB2016B344001277B4 /* Build configuration list for PBXNativeTarget "WebServiceGet" */;
 			buildPhases = (
+				DED3A2F5E5F4727E2D5C984D /* [CP] Check Pods Manifest.lock */,
 				34D7FBE52016B344001277B4 /* Sources */,
 				34D7FBE62016B344001277B4 /* Frameworks */,
 				34D7FBE72016B344001277B4 /* Resources */,
+				1D83B11F3677F39FAFB7FFC8 /* [CP] Embed Pods Frameworks */,
+				022EC9354505E00E2476442D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +161,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		022EC9354505E00E2476442D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebServiceGet/Pods-WebServiceGet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D83B11F3677F39FAFB7FFC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WebServiceGet/Pods-WebServiceGet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WebServiceGet/Pods-WebServiceGet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED3A2F5E5F4727E2D5C984D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebServiceGet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		34D7FBE52016B344001277B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D7FBEF2016B344001277B4 /* ViewController.swift in Sources */,
+				34D7FBFF2016B3BF001277B4 /* CEPTableViewController.swift in Sources */,
 				34D7FBED2016B344001277B4 /* AppDelegate.swift in Sources */,
+				4380FBDA2017F257008714FD /* CEP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +359,7 @@
 		};
 		34D7FBFC2016B344001277B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC82A53F823146D80248D6EF /* Pods-WebServiceGet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +374,7 @@
 		};
 		34D7FBFD2016B344001277B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1EB2BDBF947FD1995817E8 /* Pods-WebServiceGet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
